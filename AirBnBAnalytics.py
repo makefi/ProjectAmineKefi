@@ -29,6 +29,7 @@ def dataDesc():
         df.columns
 def viz1():
     fig1=sns.catplot(x="room_type", y="price", data=df)
+    plt.xticks(rotation=45)
     st.pyplot(fig1)        
     
 def viz2():

@@ -119,15 +119,15 @@ def viz8():
 
 def dataViz():
     st.write("Select Data to visualize:")
-    status = st.radio("Choose the data to visualize", ('Price by room type','Reviews Number by neigbourhood', 'Neigbourhood by longitude and latitude','Number of reviews by price','Busiest host in terms of reviews', 'Busiest room type', 'Busiest neighbourhood', 'Most frequent room type'))
+    status = st.radio("Choose the data to visualize", ('Price by room type','Reviews Number by neigbourhood', 'Neigbourhood by longitude and latitude','Busiest host in terms of reviews', 'Busiest room type', 'Busiest neighbourhood', 'Most frequent room type'))
     if (status == 'Price by room type'):
         viz1()
     elif (status == 'Reviews Number by neigbourhood'):
         viz2()
     elif (status == 'Neigbourhood by longitude and latitude'):
         viz3()
-    elif (status == 'Number of reviews by price'):
-        viz4()
+    #elif (status == 'Number of reviews by price'):
+    #    viz4()
     elif (status == 'Busiest host in terms of reviews'):
         viz5()
     elif(status == 'Busiest room type'):
